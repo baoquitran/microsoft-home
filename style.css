@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+}
+ul li{
+  list-style: none;
+}
+a{
+  color: #262626;
+  text-decoration: none;
+}
+
+/* nav */
+
+.container{
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+.main-nav .logo{
+  width: 110px;
+}
+.main-nav{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-menu{
+  display: flex;
+  flex: 1;
+  margin-left: 20px;
+}
+.right-menu{
+  display: flex;
+}
+.main-nav ul li {
+  padding: 0 20px 0 0;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+.main-nav li a{
+  padding-bottom: 2px;
+}
+.main-nav li a:hover{
+  border-bottom: 2px solid #262626;
+}
+.right-menu li:first-child a, .right-menu li:nth-child(2) a {
+  border-bottom: 0;
+}
+
+/* showcase */
+.btn{
+  width: inherit;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #000;
+  color:#fff;
+  margin-right: 24px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.btn span{
+  margin-right: 10px;
+}
+.btn.light{
+  background: none;
+  color:#000;
+}
+.btn:hover i {
+  transform: translateX(3px);
+  transition: transform .3s;
+}
+.btn:hover span{
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  transform: translateX(-3px);
+  transition: transform .3s;
+}
+.btn.light:hover span{
+  border-bottom: 2px solid #000;
+}
+.showcase{
+  with:100%;
+  height: 400px;
+  background: url('img/slide.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.showcase .content{
+  width: 55%;
+  padding-left: 80px;
+}
+.content p{
+  padding: 10px 0 20px 0;
+}
+.content h1{
+  font-size: 33px;
+  font-weight: bold;
+}
+
+/* quick-link */
+.links {
+  width: 80%;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(6, 1fr);
+  text-align: center;
+  padding: 80px 0 80px 0;
+  margin: auto;
+}
+.links li a img{
+  display: block;
+  margin: auto;
+}
+.links li a {
+  font-weight: bold;
+}
+
+
+/* home cards 1 */
+
+.home-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+.card img{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.card a{
+  color:#0067b8;
+  padding-top: 10px;
+}
+.card a:hover i{
+  transform: translateX(3px);
+  transition: transform .3s;
+}
+
+
+/* xbox */
+
+.xbox {
+  margin-top: 60px;
+  height: 350px;
+  background: url('./img/xbox.png') no-repeat center center/cover ;
+  display: flex;
+  align-items: center;
+}
+.content{
+  margin-left: 30px;
+  width: 45%;
+}
