@@ -59,6 +59,7 @@ a{
 
 /* showcase */
 .btn{
+  text-transform: capitalize;
   width: inherit;
   display: inline-block;
   padding: 8px 20px;
@@ -98,7 +99,7 @@ a{
 }
 .showcase .content{
   width: 55%;
-  padding-left: 80px;
+  margin-left: 80px;
 }
 .content p{
   padding: 10px 0 20px 0;
@@ -146,18 +147,67 @@ a{
   transform: translateX(3px);
   transition: transform .3s;
 }
-
+.title h2{
+  margin-bottom: 10px;
+  font-size: 28px;
+}
 
 /* xbox */
 
 .xbox {
-  margin-top: 60px;
+  margin: 60px 0 60px 0;
   height: 350px;
   background: url('./img/xbox.png') no-repeat center center/cover ;
   display: flex;
   align-items: center;
 }
-.content{
-  margin-left: 30px;
+.xbox .content{
+  margin-left: 80px;
   width: 45%;
+}
+
+/* learn more */
+
+.learn-more{
+  margin: 60px 0;
+  background-color: black;
+  text-align: center;
+}
+.learn-more .content{
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+.learn-more h2{
+  font-size: 32px;
+}
+.learn-more *{
+  color: white;
+}
+
+/* AI */
+
+.ai{
+  background: url('./img/AI.png') no-repeat center center/cover;
+  width: 100%;
+  height: 485px;
+  margin-bottom: 30px;
+  display: flex;
+}
+.ai .content{
+  margin: 40px 0 0 80px;
+}
+.ai h2{
+  font-size: 32px;
+}
+
+
+/* follow */
+
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.follow *{
+  padding-right: 10px;
 }
